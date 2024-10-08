@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* body全体のmargin/paddingをリセット */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* type＝numberのinputを右寄せ */
+input[type="number"] {
+  text-align: right;
+}
+
+header {
+  display: flex;
+  background: green;
+  color: white;
+  height: 70px;
+}
+
+header h1 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+header div {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* ユーザー名とパスワードのinputの幅 */
+input[name=userName] {
+  width: 100px;
+}
+
+input[name=password] {
+  width: 100px;
+}
+
+/* テーブルのデフォルトデザイン */
+table {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+/* テーブルのデフォルトデザイン */
+table td, table th {
+  border: 1px solid grey;
+}
+
+/* テーブルヘッダーの背景色と文字色 */
+th {
+  background: green;
+  color: white;
+}
+
+/* テーブルヘッダー内の子要素たちの幅 */
+th:nth-child(1) {
+  width: 30px;
+}
+
+th:nth-child(2) {
+  width: 150px;
+}
+
+th:nth-child(3) {
+  width: 120px;
+}
+
+th:nth-child(4) {
+  width: 60px;
+}
+
+th:nth-child(5) {
+  width: 120px;
+}
+
+/* テーブルヘッダー内の子要素たちの文字寄せ */
+td:nth-child(1) {
+  text-align: right;
+}
+
+td:nth-child(2) {
+  text-align: left;
+}
+
+td:nth-child(3) {
+  text-align: right;
+}
+
+td:nth-child(4) {
+  text-align: center;
+}
+
+td:nth-child(5) {
+  text-align: center;
+}
+
+/* テーブルデータ内のinoutの幅、文字右寄せ */
+td input {
+  width: 85%;
+  text-align: right;
+}
+
+
+/* カートテーブル、履歴テーブルのthのデザイン */
+table#cart thead tr th, table#history thead tr th {
+  background: #c0c0c0 !important;
+  color: black;
+}
+
+
+/* 履歴テーブルのthead内のtrと、thの子要素のデザイン */
+table#history thead tr th:nth-child(1) {
+  width: 150px;
+}
+
+table#history thead tr th:nth-child(2) {
+  width: 65px;
+}
+
+table#history thead tr th:nth-child(3) {
+  width: 250px;
+}
+
+/* 履歴テーブルのtbody内のtrと、tdの子要素のデザイン */
+table#history tbody tr td:nth-child(1) {
+  padding: 0 5px;
+  text-align: left;
+}
+
+table#history tbody tr td:nth-child(2) {
+  padding: 0 5px;
+  text-align: right;
+}
+
+table#history tbody tr td:nth-child(3) {
+  padding: 0 5px;
+  text-align: left;
+}
+
+
+/* 管理者用 商品登録ページのデザイン */
+#adminPage {
+  margin: 0 30px;
+}
+
+/* 管理者用 商品テーブルのthead内のtrと、thの子要素のデザイン */
+table#adminTable thead tr th:nth-child(1) {
+  width: 50px;
+}
+
+table#adminTable thead tr th:nth-child(2) {
+  width: 150px;
+}
+
+table#adminTable thead tr th:nth-child(3) {
+  width: 100px;
+}
+
+table#adminTable thead tr th:nth-child(4) {
+  width: 80px;
+}
+
+/* 管理者用 商品テーブルのtbody内のtrと、tdの子要素のデザイン */
+table#adminTable tbody tr td:nth-child(1) {
+  padding: 0 5px;
+  text-align: right;
+}
+
+table#adminTable tbody tr td:nth-child(2) {
+  padding: 0 5px;
+  text-align: left;
+}
+
+table#adminTable tbody tr td:nth-child(3) {
+  padding: 0 5px;
+  text-align: right;
+}
+
+table#adminTable tbody tr td:nth-child(4) {
+  text-align: center;
+}
+
+
+/* エラーメッセージの文字色：赤 */
+.error {
+  color: red;
+}
+
+
+/* お客様サイト　新規登録ページ */
+#signupPage {
+  margin: 0 30px;
+}
+
+#signup a {
+  color: #fff;
+}

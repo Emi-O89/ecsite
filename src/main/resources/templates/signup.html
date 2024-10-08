@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link href="/css/style.css" rel="stylesheet" />
+<title>ECサイト</title>
+</head>
+<body>
+  
+  <header>
+    <h1>ECサイト</h1>
+  </header>
+  
+  <div id="signupPage">
+    <h2>ユーザー　新規登録</h2>
+    
+    <form name="signupForm" method="post" action="/ecsite/signup">
+      <p>氏名　　　　　　：<input type="text" name="fullName" th:value="${fullName}" /></p>
+      <p>ユーザー名　　　：<input type="text" name="userName" th:value="${userName}" /></p>
+      <p>パスワード　　　：<input type="password" name="password" th:value="${password}" /></p>
+      <button type="submit" id="signupBtn">登録</button>
+      
+      <p class="error" th:text="${errMessage}"></p>
+    </form>
+  </div>
+
+</body>
